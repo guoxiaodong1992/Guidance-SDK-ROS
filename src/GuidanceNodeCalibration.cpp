@@ -335,10 +335,10 @@ int my_callback(int data_type, int data_len, char *content)
          guidancetransform.transform.translation.x=og->position_in_global_x;
          guidancetransform.transform.translation.y=og->position_in_global_y;
          guidancetransform.transform.translation.z=og->position_in_global_z;
-         guidancetransform.transform.rotation.x=og->q0;
+         guidancetransform.transform.rotation.w=og->q0;
          guidancetransform.transform.rotation.y=og->q1;
          guidancetransform.transform.rotation.z=og->q2;
-         guidancetransform.transform.rotation.w=og->q3;
+         guidancetransform.transform.rotation.x=og->q3;
          br->sendTransform(guidancetransform);
     }
 
